@@ -11,7 +11,7 @@ const Home = () => {
       </p>
       <ul>
         <li>
-          <Link to="/wwwsnackmagiccombyhtm">Wwwsnackmagiccombyhtm</Link>
+          <Link to="/framefour">FrameFour</Link>
         </li>
       </ul>
     </div>

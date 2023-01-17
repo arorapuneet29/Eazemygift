@@ -2,7 +2,4 @@
  @font-face { font-style : bold; src: url("assets/fonts/OverpassBold.ttf"); font-family : "Overpass"; font-weight : 700;  }
  @font-face { font-style : normal; src: url("assets/fonts/OverpassRegular.ttf"); font-family : "Overpass"; font-weight : 400;  }
  @font-face { font-style : bold; src: url("assets/fonts/OverpassSemiBold.ttf"); font-family : "Overpass"; font-weight : 600;  }
- @font-face { font-style : normal; src: url("assets/fonts/InterRegular.ttf"); font-family : "Inter"; font-weight : 400;  }
  @font-face { font-style : bold; src: url("assets/fonts/OverpassMedium.ttf"); font-family : "Overpass"; font-weight : 500;  }
- @font-face { font-style : bold; src: url("assets/fonts/OverpassLight.ttf"); font-family : "Overpass"; font-weight : 300;  }
- @font-face { font-style : bold; src: url("assets/fonts/PoppinsSemiBold.ttf"); font-family : "Poppins"; font-weight : 600;  }
