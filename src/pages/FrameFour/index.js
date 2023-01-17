@@ -849,9 +849,10 @@ const FrameFourPage = () => {
                 >
                   Resolve order queries, Send us an e-mail
                 </Text>
-                <Button className="cursor-pointer font-bold sm:mb-[10px] md:mb-[13px] mb-[21px] min-w-[23%] sm:mt-[21px] md:mt-[27px] mt-[44px] text-[18.92px] text-center text-white_A700 md:tracking-ls1 sm:tracking-ls1 tracking-ls3 uppercase w-[max-content]">
+                <a href="mailto:queries@easemyexpo.com"> <Button className="cursor-pointer font-bold sm:mb-[10px] md:mb-[13px] mb-[21px] min-w-[23%] sm:mt-[21px] md:mt-[27px] mt-[44px] text-[18.92px] text-center text-white_A700 md:tracking-ls1 sm:tracking-ls1 tracking-ls3 uppercase w-[max-content]">
                   SEND MAIL
-                </Button>
+                </Button></a>
+               
               </div>
             </div>
           </div>
