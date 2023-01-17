@@ -160,6 +160,9 @@ ul li a{
   flex-direction: column;
   list-style-type: none;
 }
+.dhiwise-code{
+  overflow: hidden;
+}
 @media only screen and (max-width: 600px) {
   header {
     display: none;
