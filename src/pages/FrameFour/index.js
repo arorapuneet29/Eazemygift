@@ -1,8 +1,58 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import { Stack, Text, Button, Img, List, Line, Input } from "components";
+import axios from "axios";
 
 const FrameFourPage = () => {
+  // form states
+  const [name, setName] = useState("");
+  const [company, setCompany] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+
+  // retrived data state
+  const [data, setData] = useState([]);
+
+  // submit event
+  const handleSubmit = e => {
+    e.preventDefault();
+    // console.log(name, age, designation, salary);
+
+    // our object to pass
+    const data = {
+      name,
+      company,
+      email,
+      number
+    };
+    axios
+      .post(
+        "https://sheet.best/api/sheets/0c0eba8f-3ffd-4f8a-9f00-c64dcf49a096",
+        data
+      )
+      .then(response => {
+        // console.log(response);
+        setName("");
+        setCompany("");
+        setEmail("");
+        setNumber("");
+      });
+  };
+
+  // getting data function
+  const getData = () => {
+    axios
+      .get("https://sheet.best/api/sheets/e7a8bead-e947-4de5-9421-8e17433a3fff")
+      .then(response => {
+        setData(response.data);
+      });
+  };
+
+  // triggering function
+  useEffect(() => {
+    getData();
+  }, [data]);
+
   return (
     <>
       <div className="flex flex-col font-overpass items-center justify-start mx-[auto] w-[100%]">
@@ -73,21 +123,25 @@ const FrameFourPage = () => {
                 </div>
                 <div className="flex flex-col items-end justify-end mt-[1px] sm:mx-[0] md:p-[5px] p-[9px] sm:px-[0] sm:py-[4px] sm:w-[100%] w-[38%]">
                   <div className="flex flex-row md:flex-wrap sm:flex-wrap items-center justify-end mr-[14px] md:mr-[8px] mt-[1px] sm:mx-[0] sm:px-[0] sm:w-[100%] w-[61%]">
-                    <Button
-                      className="cursor-pointer font-normal min-w-[48%] not-italic text-[12.03px] text-center text-indigo_A700 uppercase w-[max-content]"
-                      shape="RoundedBorder4"
-                      size="sm"
-                      variant="OutlineIndigoA700"
-                    >
-                      Request Demo
-                    </Button>
-                    <Button
-                      className="cursor-pointer font-normal min-w-[50%] sm:ml-[3px] md:ml-[4px] ml-[8px] not-italic text-[12.03px] text-center text-white_A700 uppercase w-[max-content]"
-                      shape="RoundedBorder4"
-                      size="sm"
-                    >
-                      Start an order
-                    </Button>
+                    <a href="#contactUs">
+                      <Button
+                        className="cursor-pointer font-normal min-w-[48%] not-italic text-[12.03px] text-center text-indigo_A700 uppercase w-[max-content]"
+                        shape="RoundedBorder4"
+                        size="sm"
+                        variant="OutlineIndigoA700"
+                      >
+                        Request Demo
+                      </Button>
+                    </a>
+                    <a href="#contactUs">
+                      <Button
+                        className="cursor-pointer font-normal min-w-[50%] sm:ml-[3px] md:ml-[4px] ml-[8px] not-italic text-[12.03px] text-center text-white_A700 uppercase w-[max-content]"
+                        shape="RoundedBorder4"
+                        size="sm"
+                      >
+                        Start an order
+                      </Button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -114,14 +168,16 @@ const FrameFourPage = () => {
                   stall spaces, designing stalls, and gifting solutions easy and
                   efficient.
                 </Text>
-                <div className="flex flex-col items-center justify-start sm:mt-[19px] md:mt-[25px] mt-[41px] sm:mx-[0] sm:pb-[23px] md:pb-[29px] pb-[48px] sm:px-[15px] md:px-[29px] px-[48px] sm:w-[100%] w-[67%]">
-                  <Button
-                    className="cursor-pointer font-normal min-w-[44%] not-italic text-[13.2px] text-center text-white_A700 w-[max-content]"
-                    shape="RoundedBorder7"
-                  >
-                    START AN ORDER
-                  </Button>
-                </div>
+                <a href="#contactUs">
+                  <div className="flex flex-col items-center justify-start sm:mt-[19px] md:mt-[25px] mt-[41px] sm:mx-[0] sm:pb-[23px] md:pb-[29px] pb-[48px] sm:px-[15px] md:px-[29px] px-[48px] sm:w-[100%] w-[67%]">
+                    <Button
+                      className="cursor-pointer font-normal min-w-[44%] not-italic text-[13.2px] text-center text-white_A700 w-[max-content]"
+                      shape="RoundedBorder7"
+                    >
+                      START AN ORDER
+                    </Button>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -274,12 +330,14 @@ const FrameFourPage = () => {
                     Do you have something different in mind for putting together
                     a gift hamper? Let’s get on a call and make this happen now.
                   </Text>
-                  <Button
-                    className="cursor-pointer font-bold mb-[1px] min-w-[46%] ml-[14px] sm:ml-[6px] md:ml-[8px] sm:mt-[11px] md:mt-[14px] mt-[24px] text-[18.92px] text-center text-white_A700 md:tracking-ls1 sm:tracking-ls1 tracking-ls3 uppercase w-[max-content]"
-                    shape="RoundedBorder9"
-                  >
-                    SHARE DETAILS
-                  </Button>
+                  <a href="#contactUs">
+                    <Button
+                      className="cursor-pointer font-bold mb-[1px] min-w-[46%] ml-[14px] sm:ml-[6px] md:ml-[8px] sm:mt-[11px] md:mt-[14px] mt-[24px] text-[18.92px] text-center text-white_A700 md:tracking-ls1 sm:tracking-ls1 tracking-ls3 uppercase w-[max-content]"
+                      shape="RoundedBorder9"
+                    >
+                      SHARE DETAILS
+                    </Button>
+                  </a>
                 </div>
                 <Img
                   src="images/img_b1db353e13334.png"
@@ -670,13 +728,16 @@ const FrameFourPage = () => {
                       , or
                     </span>
                   </Text>
-                  <Button
-                    className="cursor-pointer font-bold min-w-[30%] sm:my-[2px] md:my-[3px] my-[5px] text-[14.67px] text-center text-white_A700 md:tracking-ls1 sm:tracking-ls1 tracking-ls16699999570846558 uppercase w-[max-content]"
-                    shape="RoundedBorder4"
-                    size="md"
-                  >
-                    Book a call
-                  </Button>
+                  <a href="#contactUs">
+                    {" "}
+                    <Button
+                      className="cursor-pointer font-bold min-w-[30%] sm:my-[2px] md:my-[3px] my-[5px] text-[14.67px] text-center text-white_A700 md:tracking-ls1 sm:tracking-ls1 tracking-ls16699999570846558 uppercase w-[max-content]"
+                      shape="RoundedBorder4"
+                      size="md"
+                    >
+                      Book a call
+                    </Button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -806,7 +867,10 @@ const FrameFourPage = () => {
           >
             <div className="flex flex-col items-center justify-start ml-[112px] md:ml-[69px] mt-[1px] sm:mx-[0] sm:px-[0] sm:w-[100%] w-[77%]">
               <div className="flex flex-row md:flex-wrap sm:flex-wrap items-center justify-between w-[100%]">
-                <div className="flex flex-col sm:mx-[0] p-[15px] md:p-[9px] sm:px-[0] sm:py-[7px] sm:w-[100%] w-[52%]">
+                <div
+                  id="contactUs"
+                  className="flex flex-col sm:mx-[0] p-[15px] md:p-[9px] sm:px-[0] sm:py-[7px] sm:w-[100%] w-[52%]"
+                >
                   <Text
                     className="md:mt-[11px] mt-[18px] sm:mt-[8px] text-bluegray_900 w-[auto]"
                     as="h2"
@@ -823,89 +887,86 @@ const FrameFourPage = () => {
                   </Text>
                 </div>
                 <div className="bg-white_A700 flex flex-col items-center mb-[1px] mt-[14px] sm:mt-[6px] md:mt-[8px] sm:mx-[0] sm:p-[15px] md:p-[17px] p-[28px] rounded-radius513 shadow-bs sm:w-[100%] w-[45%]">
-                  <div className="flex flex-col items-center justify-start mb-[1px] sm:px-[0] w-[100%]">
-                    <div className="flex flex-col justify-start sm:px-[0] w-[100%]">
-                      <Text
-                        className="font-bold text-bluegray_900 tracking-ls1 uppercase w-[auto]"
-                        variant="body4"
+                  <form style={{ width: "100%" }} onSubmit={handleSubmit}>
+                    <div className="flex flex-col items-center justify-start mb-[1px] sm:px-[0] w-[100%]">
+                      <div className="flex flex-col justify-start sm:px-[0] w-[100%]">
+                        <Text
+                          className="font-bold text-bluegray_900 tracking-ls1 uppercase w-[auto]"
+                          variant="body4"
+                        >
+                          Name*
+                        </Text>
+                        <Input
+                          className="font-normal not-italic p-[0] text-[14.67px] placeholder:text-gray_400 text-gray_400 w-[100%]"
+                          wrapClassName="md:mt-[7px] mt-[12px] sm:mt-[5px] w-[100%]"
+                          name="inputfirstname"
+                          placeholder="John"
+                          size="sm"
+                          onChange={e => setName(e.target.value)}
+                          value={name}
+                        ></Input>
+                      </div>
+
+                      <div className="flex flex-col justify-start sm:mt-[18px] md:mt-[24px] mt-[39px] sm:px-[0] w-[100%]">
+                        <Text
+                          className="font-bold text-bluegray_900 tracking-ls1 uppercase w-[auto]"
+                          variant="body4"
+                        >
+                          Company*
+                        </Text>
+                        <Input
+                          className="font-normal not-italic p-[0] text-[14.67px] placeholder:text-gray_400 text-gray_400 w-[100%]"
+                          wrapClassName="md:mt-[7px] mt-[12px] sm:mt-[5px] w-[100%]"
+                          name="inputlastname One"
+                          placeholder="Joe"
+                          size="sm"
+                          onChange={e => setCompany(e.target.value)}
+                          value={company}
+                        ></Input>
+                      </div>
+                      <div className="flex flex-col justify-start sm:mt-[19px] md:mt-[24px] mt-[40px] sm:px-[0] w-[100%]">
+                        <Text
+                          className="font-bold text-bluegray_900 tracking-ls1 uppercase w-[auto]"
+                          variant="body4"
+                        >
+                          Email*
+                        </Text>
+                        <Input
+                          className="font-normal not-italic p-[0] text-[14.67px] placeholder:text-gray_400 text-gray_400 w-[100%]"
+                          wrapClassName="md:mt-[7px] mt-[12px] sm:mt-[5px] w-[100%]"
+                          type="email"
+                          name="email One"
+                          placeholder="john.joe@abc.com"
+                          size="md"
+                          onChange={e => setEmail(e.target.value)}
+                          value={email}
+                        ></Input>
+                      </div>
+                      <div className="flex flex-col justify-start md:mt-[12px] mt-[20px] sm:mt-[9px] sm:px-[0] w-[100%]">
+                        <Text
+                          className="font-bold text-bluegray_900 tracking-ls1 uppercase w-[auto]"
+                          variant="body4"
+                        >
+                          Mobile phone number*
+                        </Text>
+                        <Input
+                          className="w-[100%]"
+                          wrapClassName="flex h-[41px] md:mt-[7px] mt-[12px] sm:mt-[5px] w-[100%]"
+                          name="inputmobilepho"
+                          placeholder=""
+                          onChange={e => setNumber(e.target.value)}
+                          value={number}
+                        ></Input>
+                      </div>
+                      <Button
+                        className="cursor-pointer font-bold min-w-[100%] sm:mt-[13px] md:mt-[18px] mt-[29px] text-[19.07px] text-center text-white_A700 md:tracking-ls1 sm:tracking-ls1 tracking-ls2 uppercase w-[max-content]"
+                        shape="RoundedBorder9"
+                        type="submit"
                       >
-                        First Name*
-                      </Text>
-                      <Input
-                        className="font-normal not-italic p-[0] text-[14.67px] placeholder:text-gray_400 text-gray_400 w-[100%]"
-                        wrapClassName="md:mt-[7px] mt-[12px] sm:mt-[5px] w-[100%]"
-                        name="inputfirstname"
-                        placeholder="John"
-                        size="sm"
-                      ></Input>
+                        Submit
+                      </Button>
                     </div>
-                    <div className="flex flex-col justify-start md:mt-[12px] mt-[20px] sm:mt-[9px] sm:px-[0] w-[100%]">
-                      <Text
-                        className="font-bold text-bluegray_900 tracking-ls1 uppercase w-[auto]"
-                        variant="body4"
-                      >
-                        Last Name*
-                      </Text>
-                      <Input
-                        className="font-normal not-italic p-[0] text-[14.67px] placeholder:text-gray_400 text-gray_400 w-[100%]"
-                        wrapClassName="md:mt-[7px] mt-[12px] sm:mt-[5px] w-[100%]"
-                        name="inputlastname"
-                        placeholder="Joe"
-                        size="sm"
-                      ></Input>
-                    </div>
-                    <div className="flex flex-col justify-start sm:mt-[18px] md:mt-[24px] mt-[39px] sm:px-[0] w-[100%]">
-                      <Text
-                        className="font-bold text-bluegray_900 tracking-ls1 uppercase w-[auto]"
-                        variant="body4"
-                      >
-                        Company*
-                      </Text>
-                      <Input
-                        className="font-normal not-italic p-[0] text-[14.67px] placeholder:text-gray_400 text-gray_400 w-[100%]"
-                        wrapClassName="md:mt-[7px] mt-[12px] sm:mt-[5px] w-[100%]"
-                        name="inputlastname One"
-                        placeholder="Joe"
-                        size="sm"
-                      ></Input>
-                    </div>
-                    <div className="flex flex-col justify-start sm:mt-[19px] md:mt-[24px] mt-[40px] sm:px-[0] w-[100%]">
-                      <Text
-                        className="font-bold text-bluegray_900 tracking-ls1 uppercase w-[auto]"
-                        variant="body4"
-                      >
-                        Email*
-                      </Text>
-                      <Input
-                        className="font-normal not-italic p-[0] text-[14.67px] placeholder:text-gray_400 text-gray_400 w-[100%]"
-                        wrapClassName="md:mt-[7px] mt-[12px] sm:mt-[5px] w-[100%]"
-                        type="email"
-                        name="email One"
-                        placeholder="john.joe@abc.com"
-                        size="md"
-                      ></Input>
-                    </div>
-                    <div className="flex flex-col justify-start md:mt-[12px] mt-[20px] sm:mt-[9px] sm:px-[0] w-[100%]">
-                      <Text
-                        className="font-bold text-bluegray_900 tracking-ls1 uppercase w-[auto]"
-                        variant="body4"
-                      >
-                        Mobile phone number*
-                      </Text>
-                      <Input
-                        className="w-[100%]"
-                        wrapClassName="flex h-[41px] md:mt-[7px] mt-[12px] sm:mt-[5px] w-[100%]"
-                        name="inputmobilepho"
-                        placeholder=""
-                      ></Input>
-                    </div>
-                    <Button
-                      className="cursor-pointer font-bold min-w-[100%] sm:mt-[13px] md:mt-[18px] mt-[29px] text-[19.07px] text-center text-white_A700 md:tracking-ls1 sm:tracking-ls1 tracking-ls2 uppercase w-[max-content]"
-                      shape="RoundedBorder9"
-                    >
-                      Submit
-                    </Button>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -929,9 +990,12 @@ const FrameFourPage = () => {
                   Don’t let distance stand in your way of giving the perfect
                   personalized gift. Let’s do this.
                 </Text>
-                <Button className="cursor-pointer font-bold min-w-[26%] sm:ml-[152px] md:ml-[196px] ml-[316px] sm:mr-[200px] md:mr-[258px] mr-[416px] sm:mt-[15px] md:mt-[20px] mt-[33px] text-[18.92px] text-center text-white_A700 md:tracking-ls1 sm:tracking-ls1 tracking-ls3 uppercase w-[max-content]">
-                  book a call
-                </Button>
+                <a href="#contactUs">
+                  {" "}
+                  <Button className="cursor-pointer font-bold min-w-[26%] sm:ml-[152px] md:ml-[196px] ml-[316px] sm:mr-[200px] md:mr-[258px] mr-[416px] sm:mt-[15px] md:mt-[20px] mt-[33px] text-[18.92px] text-center text-white_A700 md:tracking-ls1 sm:tracking-ls1 tracking-ls3 uppercase w-[max-content]">
+                    book a call
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
