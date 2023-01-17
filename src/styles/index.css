@@ -160,3 +160,11 @@ ul li a{
   flex-direction: column;
   list-style-type: none;
 }
+@media only screen and (max-width: 600px) {
+  header {
+    display: none;
+  }
+  #howItWorks{
+    display: none;
+  }
+}

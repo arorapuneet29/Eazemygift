@@ -347,7 +347,7 @@ const FrameFourPage = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-start max-w-[1140px] md:ml-[115px] ml-[auto] mr-[auto] mt-[1px] sm:mx-[0] sm:pl-[15px] sm:pr-[15px] sm:px-[0] md:py-[10px] py-[17px] sm:py-[8px] w-[100%]">
+          <div id="howItWorks" className="flex flex-col items-center justify-start max-w-[1140px] md:ml-[115px] ml-[auto] mr-[auto] mt-[1px] sm:mx-[0] sm:pl-[15px] sm:pr-[15px] sm:px-[0] md:py-[10px] py-[17px] sm:py-[8px] w-[100%]">
             <div className="flex flex-col items-center justify-start sm:mb-[11px] md:mb-[14px] mb-[23px] w-[100%]">
               <Text className="text-bluegray_900 w-[auto]" as="h2" variant="h2">
                 How it works
@@ -574,8 +574,7 @@ const FrameFourPage = () => {
                         className="font-normal leading-[24.93px] md:leading-[normal] sm:leading-[normal] ml-[16px] md:ml-[9px] mr-[11px] md:mr-[6px] sm:mt-[12px] md:mt-[16px] mt-[26px] sm:mx-[0] not-italic text-gray_901 sm:w-[100%] w-[91%]"
                         variant="body4"
                       >
-                        It was excellent and everyone enjoyed the boxes. Thank
-                        you for the selective curation and delivery.
+                     "The custom gift solutions provided by Easemyexpo helped us leave a lasting impression on our visitors at the exhibition." 
                       </Text>
                     </div>
                     <div className="flex flex-col items-end justify-start sm:mt-[14px] md:mt-[19px] mt-[31px] w-[100%]">
@@ -588,14 +587,13 @@ const FrameFourPage = () => {
                             -{" "}
                           </span>
                           <span className="text-gray_901 text-[14.67px] font-overpass">
-                            Dhawal
                           </span>
                         </Text>
                         <Text
                           className="font-semibold mb-[4px] ml-[12px] sm:ml-[5px] md:ml-[7px] mt-[13px] sm:mt-[6px] md:mt-[8px] text-gray_901 tracking-ls1 uppercase w-[auto]"
                           variant="body4"
                         >
-                          Dignitas Digital
+                       - An Indian Marketing Manager
                         </Text>
                       </div>
                       <Img
@@ -618,9 +616,7 @@ const FrameFourPage = () => {
                         className="font-normal leading-[24.93px] md:leading-[normal] sm:leading-[normal] ml-[16px] md:ml-[9px] mr-[11px] md:mr-[6px] sm:mt-[12px] md:mt-[16px] mt-[26px] sm:mx-[0] not-italic text-gray_901 sm:w-[100%] w-[91%]"
                         variant="body4"
                       >
-                        Loved the packaging and all sort of things were added in
-                        it, from body care essentials to hogging stuff and cute
-                        book and dream catcher.
+                        "Easemyexpo made the process of booking our stall at an exhibition so much easier and stress-free."
                       </Text>
                     </div>
                     <div className="flex flex-col items-end justify-start sm:mt-[14px] md:mt-[19px] mt-[31px] w-[100%]">
@@ -633,14 +629,14 @@ const FrameFourPage = () => {
                             -{" "}
                           </span>
                           <span className="text-gray_901 text-[14.67px] font-overpass">
-                            Simran
+                         
                           </span>
                         </Text>
                         <Text
                           className="font-semibold mb-[4px] ml-[12px] sm:ml-[5px] md:ml-[7px] mt-[13px] sm:mt-[6px] md:mt-[8px] text-gray_901 tracking-ls1 uppercase w-[auto]"
                           variant="body4"
                         >
-                          Agoda
+                        An Indian Business Owner.
                         </Text>
                       </div>
                       <Img
@@ -663,9 +659,7 @@ const FrameFourPage = () => {
                         className="font-normal leading-[24.93px] md:leading-[normal] sm:leading-[normal] ml-[16px] md:ml-[9px] mr-[11px] md:mr-[6px] sm:mt-[12px] md:mt-[16px] mt-[26px] sm:mx-[0] not-italic text-gray_901 sm:w-[100%] w-[91%]"
                         variant="body4"
                       >
-                        We loved the package. It was a healthy mix of new
-                        flavors that we have not tasted before. And yes, the
-                        packing was just AWESOMEEEE
+                        "We were able to find the perfect vendor for our stall design needs thanks to Easemyexpo's comprehensive vendor sourcing service." 
                       </Text>
                     </div>
                     <div className="flex flex-col items-end justify-start sm:mt-[14px] md:mt-[19px] mt-[31px] w-[100%]">
@@ -678,14 +672,14 @@ const FrameFourPage = () => {
                             -{" "}
                           </span>
                           <span className="text-gray_901 text-[14.67px] font-overpass">
-                            Prateek
+                         
                           </span>
                         </Text>
                         <Text
                           className="font-semibold mb-[4px] ml-[12px] sm:ml-[5px] md:ml-[7px] mt-[13px] sm:mt-[6px] md:mt-[8px] text-gray_901 tracking-ls1 uppercase w-[auto]"
                           variant="body4"
                         >
-                          FMR
+                           - An Indian Event Planner
                         </Text>
                       </div>
                       <Img
