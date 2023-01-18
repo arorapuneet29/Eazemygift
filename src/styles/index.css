@@ -6,6 +6,13 @@ body {
   margin: 0;
   padding: 0;
 }
+.Brand-circle{
+  background-color: gray;
+    justify-content: center;
+    align-items: center;
+    color: #dbba15;
+    font-size: 30px;
+}
 .dhiwise-code,
 .dhiwise-navigation {
   min-height: 100%;

@@ -2,7 +2,7 @@ import React from "react";
 
 export const Img = ({
   className,
-  src = "defaultNoData.png",
+  src = "defaultNoData.jpeg",
   alt = "testImg",
   ...restProps
 }) => {

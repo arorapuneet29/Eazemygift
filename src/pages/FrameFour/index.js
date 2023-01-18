@@ -56,7 +56,7 @@ const FrameFourPage = () => {
   return (
     <>
       <div className="flex flex-col font-overpass items-center justify-start mx-[auto] w-[100%]">
-        <header className="w-[100%]">
+        {/* <header className="w-[100%]">
           <Stack className="bg-white_A700 h-[72px] relative w-[100%]">
             <div className="absolute bg-white_A700 bottom-[1%] sm:h-[35px] md:h-[45px] h-[71px] w-[100%]"></div>
             <div className="absolute border-0 border-gray_100 border-solid flex flex-row md:flex-wrap sm:flex-wrap items-center justify-end sm:pl-[3px] md:pl-[4px] pl-[8px] sm:py-[3px] md:py-[4px] py-[8px] w-[100%]">
@@ -147,7 +147,7 @@ const FrameFourPage = () => {
               </div>
             </div>
           </Stack>
-        </header>
+        </header> */}
         <div className="flex flex-col justify-start w-[100%]">
           <div className="bg-deep_purple_A700 flex flex-col items-center justify-start sm:p-[15px] md:p-[60px] p-[98px] w-[100%]">
             <div className="flex flex-col items-center justify-start max-w-[841px] mb-[102px] sm:mb-[49px] md:mb-[63px] ml-[auto] mr-[auto] sm:mx-[0] sm:pl-[15px] sm:pr-[15px] sm:px-[0] w-[100%]">
@@ -173,6 +173,11 @@ const FrameFourPage = () => {
                     <Button
                       className="cursor-pointer font-normal min-w-[44%] not-italic text-[13.2px] text-center text-white_A700 w-[max-content]"
                       shape="RoundedBorder7"
+                      style={{
+                        backgroundColor: "#b8b815",
+                        color: "black",
+                        fontWeight: "bold"
+                      }}
                     >
                       START AN ORDER
                     </Button>
@@ -209,8 +214,8 @@ const FrameFourPage = () => {
                       className="font-normal leading-[25.92px] md:leading-[normal] sm:leading-[normal] md:mt-[12px] mt-[20px] sm:mt-[9px] sm:mx-[0] not-italic text-black_900 text-center tracking-ls08999999761581421 md:tracking-ls1 sm:tracking-ls1 sm:w-[100%] w-[89%]"
                       variant="body1"
                     >
-                      "Booking your perfect stall space has never been easier
-                      with Easemyexpo"
+                      "Booking your perfect stall space has been easier with
+                      Easemyexpo"
                     </Text>
                     <Text
                       className="font-bold md:mt-[12px] mt-[20px] sm:mt-[9px] text-indigo_A700 md:tracking-ls1 sm:tracking-ls1 tracking-ls3 uppercase w-[auto]"
@@ -327,8 +332,9 @@ const FrameFourPage = () => {
                     className="font-normal leading-[25.92px] md:leading-[normal] sm:leading-[normal] ml-[14px] md:ml-[8px] mt-[16px] sm:mt-[7px] md:mt-[9px] sm:mx-[0] not-italic text-bluegray_900 tracking-ls08999999761581421 md:tracking-ls1 sm:tracking-ls1 sm:w-[100%] w-[90%]"
                     variant="body1"
                   >
-                    Do you have something different in mind for putting together
-                    a gift hamper? Let’s get on a call and make this happen now.
+                    Stall booking, vendor sourcing, and custom gift hamper
+                    solutions. Let's make your next event a success, schedule a
+                    call now.
                   </Text>
                   <a href="#contactUs">
                     <Button
@@ -347,17 +353,22 @@ const FrameFourPage = () => {
               </div>
             </div>
           </div>
-          <div id="howItWorks" className="flex flex-col items-center justify-start max-w-[1140px] md:ml-[115px] ml-[auto] mr-[auto] mt-[1px] sm:mx-[0] sm:pl-[15px] sm:pr-[15px] sm:px-[0] md:py-[10px] py-[17px] sm:py-[8px] w-[100%]">
+          <div
+            id="howItWorks"
+            className="flex flex-col items-center justify-start max-w-[1140px] md:ml-[115px] ml-[auto] mr-[auto] mt-[1px] sm:mx-[0] sm:pl-[15px] sm:pr-[15px] sm:px-[0] md:py-[10px] py-[17px] sm:py-[8px] w-[100%]"
+          >
             <div className="flex flex-col items-center justify-start sm:mb-[11px] md:mb-[14px] mb-[23px] w-[100%]">
               <Text className="text-bluegray_900 w-[auto]" as="h2" variant="h2">
                 How it works
               </Text>
-              <div className="flex flex-col h-[126px] sm:h-[61px] md:h-[79px] items-center justify-start sm:mt-[23px] md:mt-[29px] mt-[48px] rounded-radius50 w-[126px] sm:w-[60px] md:w-[78px]">
-                <Img
+              <div className="Brand-circle flex flex-col h-[126px] sm:h-[61px] md:h-[79px] items-center  sm:mt-[23px] md:mt-[29px] mt-[48px] rounded-radius50 w-[126px] sm:w-[60px] md:w-[78px]">
+                {/* <Img
                   src="images/img_4b8115d50f7c4.png"
                   className="h-[126px] sm:h-[61px] md:h-[79px] rounded-radius50 w-[100%]"
                   alt="4b8115d50f7cFour"
-                />
+                /> */}
+                <div
+                  >Brand</div>
               </div>
               <Text
                 className="font-bold sm:mt-[11px] md:mt-[14px] mt-[23px] text-bluegray_900 w-[auto]"
@@ -451,7 +462,7 @@ const FrameFourPage = () => {
                   </div>
                   <div className="flex flex-col items-center sm:mx-[0] pb-[1px] sm:px-[0] px-[1px] sm:w-[100%] w-[34%]">
                     <Img
-                      src="images/img_8a88b9db89ea4.png"
+           src="images/img_ccb17b8db2a14.png"
                       className="max-w-[100%] sm:w-[100%] w-[69%]"
                       alt="8a88b9db89eaFour"
                     />
@@ -459,12 +470,12 @@ const FrameFourPage = () => {
                       className="font-normal sm:mt-[15px] md:mt-[19px] mt-[32px] not-italic text-gray_900 tracking-ls08999999761581421 md:tracking-ls1 sm:tracking-ls1 w-[auto]"
                       variant="body1"
                     >
-                      Lily in Manchester
+                      Ansh in Bangalore
                     </Text>
                   </div>
                   <div className="flex flex-col items-center sm:mx-[0] sm:pb-[2px] md:pb-[3px] pb-[6px] sm:px-[0] md:px-[3px] px-[6px] sm:w-[100%] w-[34%]">
                     <Img
-                      src="images/img_71ac0b56a0da4.png"
+                   src="images/img_ccb17b8db2a14.png"
                       className="max-w-[100%] sm:w-[100%] w-[71%]"
                       alt="71ac0b56a0daFour"
                     />
@@ -574,7 +585,9 @@ const FrameFourPage = () => {
                         className="font-normal leading-[24.93px] md:leading-[normal] sm:leading-[normal] ml-[16px] md:ml-[9px] mr-[11px] md:mr-[6px] sm:mt-[12px] md:mt-[16px] mt-[26px] sm:mx-[0] not-italic text-gray_901 sm:w-[100%] w-[91%]"
                         variant="body4"
                       >
-                     "The custom gift solutions provided by Easemyexpo helped us leave a lasting impression on our visitors at the exhibition." 
+                        "The custom gift solutions provided by Easemyexpo helped
+                        us leave a lasting impression on our visitors at the
+                        exhibition."
                       </Text>
                     </div>
                     <div className="flex flex-col items-end justify-start sm:mt-[14px] md:mt-[19px] mt-[31px] w-[100%]">
@@ -586,14 +599,13 @@ const FrameFourPage = () => {
                           <span className="text-gray_900 text-[14.67px] font-overpass">
                             -{" "}
                           </span>
-                          <span className="text-gray_901 text-[14.67px] font-overpass">
-                          </span>
+                          <span className="text-gray_901 text-[14.67px] font-overpass"></span>
                         </Text>
                         <Text
                           className="font-semibold mb-[4px] ml-[12px] sm:ml-[5px] md:ml-[7px] mt-[13px] sm:mt-[6px] md:mt-[8px] text-gray_901 tracking-ls1 uppercase w-[auto]"
                           variant="body4"
                         >
-                       - An Indian Marketing Manager
+                          - An Indian Marketing Manager
                         </Text>
                       </div>
                       <Img
@@ -616,7 +628,8 @@ const FrameFourPage = () => {
                         className="font-normal leading-[24.93px] md:leading-[normal] sm:leading-[normal] ml-[16px] md:ml-[9px] mr-[11px] md:mr-[6px] sm:mt-[12px] md:mt-[16px] mt-[26px] sm:mx-[0] not-italic text-gray_901 sm:w-[100%] w-[91%]"
                         variant="body4"
                       >
-                        "Easemyexpo made the process of booking our stall at an exhibition so much easier and stress-free."
+                        "Easemyexpo made the process of booking our stall at an
+                        exhibition so much easier and stress-free."
                       </Text>
                     </div>
                     <div className="flex flex-col items-end justify-start sm:mt-[14px] md:mt-[19px] mt-[31px] w-[100%]">
@@ -628,15 +641,13 @@ const FrameFourPage = () => {
                           <span className="text-gray_900 text-[14.67px] font-overpass">
                             -{" "}
                           </span>
-                          <span className="text-gray_901 text-[14.67px] font-overpass">
-                         
-                          </span>
+                          <span className="text-gray_901 text-[14.67px] font-overpass"></span>
                         </Text>
                         <Text
                           className="font-semibold mb-[4px] ml-[12px] sm:ml-[5px] md:ml-[7px] mt-[13px] sm:mt-[6px] md:mt-[8px] text-gray_901 tracking-ls1 uppercase w-[auto]"
                           variant="body4"
                         >
-                        An Indian Business Owner.
+                          An Indian Business Owner.
                         </Text>
                       </div>
                       <Img
@@ -659,7 +670,9 @@ const FrameFourPage = () => {
                         className="font-normal leading-[24.93px] md:leading-[normal] sm:leading-[normal] ml-[16px] md:ml-[9px] mr-[11px] md:mr-[6px] sm:mt-[12px] md:mt-[16px] mt-[26px] sm:mx-[0] not-italic text-gray_901 sm:w-[100%] w-[91%]"
                         variant="body4"
                       >
-                        "We were able to find the perfect vendor for our stall design needs thanks to Easemyexpo's comprehensive vendor sourcing service." 
+                        "We were able to find the perfect vendor for our stall
+                        design needs thanks to Easemyexpo's comprehensive vendor
+                        sourcing service."
                       </Text>
                     </div>
                     <div className="flex flex-col items-end justify-start sm:mt-[14px] md:mt-[19px] mt-[31px] w-[100%]">
@@ -671,15 +684,13 @@ const FrameFourPage = () => {
                           <span className="text-gray_900 text-[14.67px] font-overpass">
                             -{" "}
                           </span>
-                          <span className="text-gray_901 text-[14.67px] font-overpass">
-                         
-                          </span>
+                          <span className="text-gray_901 text-[14.67px] font-overpass"></span>
                         </Text>
                         <Text
                           className="font-semibold mb-[4px] ml-[12px] sm:ml-[5px] md:ml-[7px] mt-[13px] sm:mt-[6px] md:mt-[8px] text-gray_901 tracking-ls1 uppercase w-[auto]"
                           variant="body4"
                         >
-                           - An Indian Event Planner
+                          - An Indian Event Planner
                         </Text>
                       </div>
                       <Img
@@ -722,7 +733,7 @@ const FrameFourPage = () => {
                       , or
                     </span>
                   </Text>
-                  <a href="#contactUs">
+                  {/* <a href="#contactUs">
                     {" "}
                     <Button
                       className="cursor-pointer font-bold min-w-[30%] sm:my-[2px] md:my-[3px] my-[5px] text-[14.67px] text-center text-white_A700 md:tracking-ls1 sm:tracking-ls1 tracking-ls16699999570846558 uppercase w-[max-content]"
@@ -731,7 +742,7 @@ const FrameFourPage = () => {
                     >
                       Book a call
                     </Button>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -820,11 +831,13 @@ const FrameFourPage = () => {
                         className="font-normal leading-[25.92px] md:leading-[normal] sm:leading-[normal] md:mt-[11px] mt-[18px] sm:mt-[8px] not-italic text-bluegray_900 tracking-ls08999999761581421 md:tracking-ls1 sm:tracking-ls1 w-[100%]"
                         variant="body1"
                       >
-                        Easemyexpo, the one-stop-shop for all your exhibition
-                        needs, announced today that it has partnered with top
-                        exhibition organizers to expand the platform's reach and
-                        offer more options for exhibitors to book stall spaces
-                        and find vendors.
+                        Easemyexpo Launches New Gifting Platform for Exhibitors"
+                        - Easemyexpo, the leading platform for booking stall
+                        spaces at exhibitions and expos, has just announced the
+                        launch of their new gifting platform for exhibitors.
+                        This new platform allows exhibitors to easily create
+                        memorable experiences for attendees by providing them
+                        with goodie bags, corporate gifts, and more.
                       </Text>
                     </div>
                   </div>
@@ -849,16 +862,18 @@ const FrameFourPage = () => {
                 >
                   Resolve order queries, Send us an e-mail
                 </Text>
-                <a href="mailto:queries@easemyexpo.com"> <Button className="cursor-pointer font-bold sm:mb-[10px] md:mb-[13px] mb-[21px] min-w-[23%] sm:mt-[21px] md:mt-[27px] mt-[44px] text-[18.92px] text-center text-white_A700 md:tracking-ls1 sm:tracking-ls1 tracking-ls3 uppercase w-[max-content]">
-                  SEND MAIL
-                </Button></a>
-               
+                <a href="mailto:queries@easemyexpo.com">
+                  {" "}
+                  <Button className="cursor-pointer font-bold sm:mb-[10px] md:mb-[13px] mb-[21px] min-w-[23%] sm:mt-[21px] md:mt-[27px] mt-[44px] text-[18.92px] text-center text-white_A700 md:tracking-ls1 sm:tracking-ls1 tracking-ls3 uppercase w-[max-content]">
+                    SEND MAIL
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
           <div
             className="bg-cover bg-no-repeat flex flex-col justify-end max-w-[1581px] ml-[auto] mr-[auto] sm:p-[15px] md:p-[45px] p-[73px] sm:pl-[15px] sm:pr-[15px] w-[100%]"
-            style={{ backgroundImage: "url('images/defaultNoData.png')" }}
+            style={{ backgroundImage: "url('images/defaultNoData.jpeg')" }}
           >
             <div className="flex flex-col items-center justify-start ml-[112px] md:ml-[69px] mt-[1px] sm:mx-[0] sm:px-[0] sm:w-[100%] w-[77%]">
               <div className="flex flex-row md:flex-wrap sm:flex-wrap items-center justify-between w-[100%]">
@@ -878,7 +893,7 @@ const FrameFourPage = () => {
                     variant="body1"
                   >
                     Fill out these details and we will get in touch with you for
-                    your gifting requirement.
+                    your requirement.
                   </Text>
                 </div>
                 <div className="bg-white_A700 flex flex-col items-center mb-[1px] mt-[14px] sm:mt-[6px] md:mt-[8px] sm:mx-[0] sm:p-[15px] md:p-[17px] p-[28px] rounded-radius513 shadow-bs sm:w-[100%] w-[45%]">
@@ -982,13 +997,12 @@ const FrameFourPage = () => {
                   className="font-normal sm:ml-[23px] md:ml-[29px] ml-[48px] sm:mt-[23px] md:mt-[29px] mt-[48px] not-italic text-white_A700 tracking-ls08999999761581421 md:tracking-ls1 sm:tracking-ls1 w-[auto]"
                   variant="body1"
                 >
-                  Don’t let distance stand in your way of giving the perfect
-                  personalized gift. Let’s do this.
+                  Easemyexpo, bridging the gap between brands and their customers through personalized exhibition experiences.
                 </Text>
                 <a href="#contactUs">
                   {" "}
                   <Button className="cursor-pointer font-bold min-w-[26%] sm:ml-[152px] md:ml-[196px] ml-[316px] sm:mr-[200px] md:mr-[258px] mr-[416px] sm:mt-[15px] md:mt-[20px] mt-[33px] text-[18.92px] text-center text-white_A700 md:tracking-ls1 sm:tracking-ls1 tracking-ls3 uppercase w-[max-content]">
-                    book a call
+                    Lets Conect
                   </Button>
                 </a>
               </div>
