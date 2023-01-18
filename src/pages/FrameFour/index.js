@@ -226,7 +226,7 @@ const FrameFourPage = () => {
                   </div>
                   <div className="flex flex-col items-center sm:mx-[0] md:p-[12px] p-[20px] sm:px-[15px] sm:py-[9px] sm:w-[100%] w-[25%]">
                     <Img
-                      src="images/img_39b904f6f2164.png"
+                      src="images/defaultNoData.jpeg"
                       className="max-w-[100%] mt-[1px] sm:w-[100%] w-[91%]"
                       alt="39b904f6f2164"
                     />
@@ -346,7 +346,7 @@ const FrameFourPage = () => {
                   </a>
                 </div>
                 <Img
-                  src="images/img_b1db353e13334.png"
+                  src="images/want.png"
                   className="max-w-[100%] sm:w-[100%] w-[50%]"
                   alt="b1db353e13334"
                 />
@@ -873,7 +873,7 @@ const FrameFourPage = () => {
           </div>
           <div
             className="bg-cover bg-no-repeat flex flex-col justify-end max-w-[1581px] ml-[auto] mr-[auto] sm:p-[15px] md:p-[45px] p-[73px] sm:pl-[15px] sm:pr-[15px] w-[100%]"
-            style={{ backgroundImage: "url('images/defaultNoData.jpeg')" }}
+            style={{ backgroundImage: "url('')" }}
           >
             <div className="flex flex-col items-center justify-start ml-[112px] md:ml-[69px] mt-[1px] sm:mx-[0] sm:px-[0] sm:w-[100%] w-[77%]">
               <div className="flex flex-row md:flex-wrap sm:flex-wrap items-center justify-between w-[100%]">
@@ -1002,7 +1002,7 @@ const FrameFourPage = () => {
                 <a href="#contactUs">
                   {" "}
                   <Button className="cursor-pointer font-bold min-w-[26%] sm:ml-[152px] md:ml-[196px] ml-[316px] sm:mr-[200px] md:mr-[258px] mr-[416px] sm:mt-[15px] md:mt-[20px] mt-[33px] text-[18.92px] text-center text-white_A700 md:tracking-ls1 sm:tracking-ls1 tracking-ls3 uppercase w-[max-content]">
-                    Lets Conect
+                    Lets Connect
                   </Button>
                 </a>
               </div>
