@@ -731,7 +731,7 @@ const FrameFourPage = () => {
                       queries@easemyexpo.com
                     </span>
                     <span className="text-bluegray_900 text-[25.23px] font-overpass sm:text-[21.23px] md:text-[23.23px]">
-                      , or
+                    
                     </span>
                   </Text>
                   {/* <a href="#contactUs">
