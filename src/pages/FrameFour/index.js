@@ -229,6 +229,7 @@ const FrameFourPage = () => {
                       src="images/defaultNoData.jpeg"
                       className="max-w-[100%] mt-[1px] sm:w-[100%] w-[91%]"
                       alt="39b904f6f2164"
+                      style={{ borderRadius: "50%" }}
                     />
                     <div className="flex flex-col justify-start sm:mb-[4px] md:mb-[5px] mb-[9px] sm:mt-[25px] md:mt-[32px] mt-[52px] sm:mx-[0] sm:px-[0] sm:w-[100%] w-[99%]">
                       <Text
@@ -362,13 +363,13 @@ const FrameFourPage = () => {
                 How it works
               </Text>
               <div className="Brand-circle flex flex-col h-[126px] sm:h-[61px] md:h-[79px] items-center  sm:mt-[23px] md:mt-[29px] mt-[48px] rounded-radius50 w-[126px] sm:w-[60px] md:w-[78px]">
-                {/* <Img
-                  src="images/img_4b8115d50f7c4.png"
+                <Img
+                  src="images/brand.png"
                   className="h-[126px] sm:h-[61px] md:h-[79px] rounded-radius50 w-[100%]"
                   alt="4b8115d50f7cFour"
-                /> */}
-                <div
-                  >Brand</div>
+                />
+                {/* <div
+                  >Brand</div> */}
               </div>
               <Text
                 className="font-bold sm:mt-[11px] md:mt-[14px] mt-[23px] text-bluegray_900 w-[auto]"
